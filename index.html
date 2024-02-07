@@ -7,7 +7,7 @@ It includes the header, footer, and the main content of the website.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce-Website</title>
+    <title>Josh's Matchpoint Marketplace</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/400dffb527.js" crossorigin="anonymous"></script>
 </head>
@@ -17,16 +17,16 @@ It includes the header, footer, and the main content of the website.
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+                <li><a href="pages/shop_pages/shop.html">Shop</a></li>
+                <li><a href="pages/blog_pages/blog.html">Blog</a></li>
+                <li><a href="pages/about_pages/about.html">About</a></li>
+                <li><a href="pages/contact_pages/contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="pages/cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
                 <a id="close"><i class="fa-solid fa-x fa-sm"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
+            <a href="pages/cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
             <i id="bar" class="fa-solid fa-bars fa-xl"></i>
         </div>
     </section>
@@ -67,7 +67,7 @@ It includes the header, footer, and the main content of the website.
         <h2>Hot Deals</h2>
         <p>Be Quick!</p>
         <div class="product-container">
-            <div class="product">
+            <div class="product" onclick="window.location.href='pages/product_pages/single_product.html'">
                 <img src="images/featured_products/deal1/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
@@ -87,7 +87,7 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
+            <div class="product" onclick="window.location.href='pages/product_pages/single_product2.html'">
                 <img src="images/featured_products/deal2/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
@@ -107,7 +107,7 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
+            <div class="product" onclick="window.location.href='pages/product_pages/single_product3.html'">
                 <img src="images/featured_products/deal3/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
@@ -127,7 +127,7 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
+            <div class="product" onclick="window.location.href='pages/product_pages/single_product4.html'">
                 <img src="images/featured_products/deal4/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
@@ -329,7 +329,7 @@ It includes the header, footer, and the main content of the website.
             <button class="normal">Subscribe</button>
         </div>
     </section>
-    <section id="footer" class="section-p1">
+    <footer id="footer" class="section-p1">
         <div class="col">
             <img src="images/logo.png" alt="">
             <h4>Contact</h4>
@@ -373,12 +373,8 @@ It includes the header, footer, and the main content of the website.
             <p>Secured Payment Methods</p>
             <img src="images/payment/payment_methods.png" alt="">
         </div>
-    </section>
-    <section id="copyright">
-        <div class="copyright">
-            <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
-        </div>
-    </section>
+        <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
