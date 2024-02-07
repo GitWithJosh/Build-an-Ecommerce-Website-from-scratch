@@ -247,7 +247,7 @@ body {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #E3E6F3;
+    border: 1px solid #2b397a;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -320,6 +320,99 @@ body {
     color: #606060;
     font-size: 12px;
     padding-top: 5px;
+}
+
+/* Pagination Styles */
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    color: #fff;
+    background-color: #088178;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border: 2px solid #E3E6F3;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#pagination a:hover {
+    background-color: #fff;
+    color: #088178;
+}
+
+#pagination a.active {
+    background-color: #fff;
+    color: #088178;
+}
+
+#pagination a i {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Single Product Page Styles */
+
+#product-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+#product-details .single-product-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#product-details .single-product-details {
+    width: 60%;
+    padding-top: 30px;
+}
+
+#product-details .single-product-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#product-details .single-product-details h2 {
+    font-size: 26px;
+}
+
+#product-details .single-product-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details .single-product-details button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#product-details .single-product-details span {
+    line-height: 25px;
+}
+
+#MainImg {
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #E3E6F3;
+}
+
+.small-image-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small-image-col {
+    flex-basis: 24%;
+    cursor: pointer;
+    border: 1px solid #E3E6F3;
+    border-radius: 10px;
+    text-align: center;
 }
 
 /* Banner Section Styles */
@@ -580,6 +673,23 @@ body {
     #newsletter .newsform{
         width: 70%;
     }
+
+    /* Single Product Page Styles */
+
+    #product-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #product-details .single-product-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #product-details .single-product-details {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 477px) {
