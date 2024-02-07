@@ -1,40 +1,39 @@
 <!--
-This file contains the main structure of the website. 
-It includes the header, footer, and the main content of the website.
+This file contains the main structure of the first shop page.
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce-Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shop 1</title>
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://kit.fontawesome.com/400dffb527.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="images/logo.png" alt=""></a>
+        <a href="#"><img src="../../images/logo.png" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="active" href="../shop_pages/shop.html">Shop</a></li>
+                <li><a href="../blog_pages/blog.html">Blog</a></li>
+                <li><a href="../about_pages/about.html">About</a></li>
+                <li><a href="../contact_pages/contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
                 <a id="close"><i class="fa-solid fa-x fa-sm"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
+            <a href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
             <i id="bar" class="fa-solid fa-bars fa-xl"></i>
         </div>
     </section>
     <!-- Potentially add a wheel feature -->
     <section id="featured_products" class="section-p1">
         <div class="product-container">
-            <div class="product">
-                <img src="images/featured_products/deal1/1.jpg" alt="">
+            <div class="product" onclick="window.location.href='../product_pages/single_product.html'">
+                <img src="../../images/featured_products/deal1/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
                     <h5>2x Blade 98 16X19 V9 Plus Schlägertasche</h5>
@@ -53,8 +52,8 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
-                <img src="images/featured_products/deal2/1.jpg" alt="">
+            <div class="product" onclick="window.location.href='../product_pages/single_product2.html'">
+                <img src="../../images/featured_products/deal2/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
                     <h5>2x Ultra Team V4.0 Plus Schlägertasche</h5>
@@ -73,8 +72,8 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
-                <img src="images/featured_products/deal3/1.jpg" alt="">
+            <div class="product" onclick="window.location.href='../product_pages/single_product3.html'">
+                <img src="../../images/featured_products/deal3/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
                     <h5>2x Pro Staff 97 X Plus Schlägertasche</h5>
@@ -93,8 +92,8 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
-                <img src="images/featured_products/deal4/1.jpg" alt="">
+            <div class="product" onclick="window.location.href='../product_pages/single_product4.html'">
+                <img src="../../images/featured_products/deal4/1.jpg" alt="">
                 <div class="description">
                     <span>Wilson</span>
                     <h5>2x Clash 100 V2.0 Plus Schlägertasche</h5>
@@ -113,91 +112,12 @@ It includes the header, footer, and the main content of the website.
                     <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
                 </div>
             </div>
-            <div class="product">
-                <img src="images/featured_products/topseller1.jpg" alt="">
-                <div class="description">
-                    <span>ASICS</span>
-                    <h5>Gel-Resolution 9 Sandplatzschuh Herren</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        (34)
-                    </div>
-                    <h3><s>159,95 €</s> -7%</h3>
-                    <h4>149,95 €</h4>
-                </div>
-                <div class="cart">
-                    <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/featured_products/topseller2.jpg" alt="">
-                <div class="description">
-                    <span>Dunlop</span>
-                    <h5>Australian Open 4er Dose</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        (67)
-                    </div>
-                    <h3><s>10,99 €</s> -28%</h3>
-                    <h4>7,95 €</h4>
-                </div>
-                <div class="cart">
-                    <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/featured_products/topseller3.jpg" alt="">
-                <div class="description">
-                    <span>Tennis-Popint</span>
-                    <h5>Premium Grip 3er Pack</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        (52)
-                    </div>
-                    <h3><s>7,95 €</s> -18%</h3>
-                    <h4>6,50 €</h4>
-                </div>
-                <div class="cart">
-                    <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/featured_products/topseller4.jpg" alt="">
-                <div class="description">
-                    <span>Quiet Please</span>
-                    <h5>Ocean Block Stripe Receiver T-Shirt Herren</h5>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        (12)
-                    </div>
-                    <h3><s>44,95 €</s> -22%</h3>
-                    <h4>34,95 €</h4>
-                </div>
-                <div class="cart">
-                    <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #088178;"></i></a>
-                </div>
-            </div>
         </div>
     </section>
     <section id="pagination" class="section-p1">
         <a class="active" href="#">1</a>
         <a href="shop2.html">2</a>
+        <a href="shop3.html">3</a>
         <a href="shop2.html"><i class="fa-solid fa-arrow-right"></i></a>
     </section>
     <section id="newsletter" class="section-p1">
@@ -210,9 +130,9 @@ It includes the header, footer, and the main content of the website.
             <button class="normal">Subscribe</button>
         </div>
     </section>
-    <section id="footer" class="section-p1">
+    <footer id="footer" class="section-p1">
         <div class="col">
-            <img src="images/logo.png" alt="">
+            <img src="../../images/logo.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address:</strong>123 ATP Street, Heidelberg</p>
             <p><strong>Phone:</strong>+49123123123</p>
@@ -248,18 +168,14 @@ It includes the header, footer, and the main content of the website.
             <h4>Install App</h4>
             <p>Download from App Store or Google Play</p>
             <div class="row">
-                <img src="images/payment/app_store.jpg" alt="">
-                <img src="images/payment/play_store.jpg" alt="">
+                <img src="../../images/payment/app_store.jpg" alt="">
+                <img src="../../images/payment/play_store.jpg" alt="">
             </div>
             <p>Secured Payment Methods</p>
-            <img src="images/payment/payment_methods.png" alt="">
+            <img src="../../images/payment/payment_methods.png" alt="">
         </div>
-    </section>
-    <section id="copyright">
-        <div class="copyright">
-            <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
-        </div>
-    </section>
+        <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
