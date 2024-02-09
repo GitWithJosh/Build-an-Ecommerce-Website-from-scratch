@@ -7,8 +7,106 @@ This file contains the main structure of the first about page.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/400dffb527.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>About Page</h1>
+    <section id="header">
+        <a href="#"><img src="../../images/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../shop_pages/shop.html">Shop</a></li>
+                <li><a href="../blog_pages/blog.html">Blog</a></li>
+                <li><a class="active" href="../about_pages/about.html">About</a></li>
+                <li><a href="../contact_pages/contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+                <a id="close"><i class="fa-solid fa-x fa-sm"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
+            <i id="bar" class="fa-solid fa-bars fa-xl"></i>
+        </div>
+    </section>
+    <section id="about-landing">
+    </section>
+    <section id="about-head" class="section-p1">
+        <img src="../../images/me.jpg" alt="">
+        <div>
+            <h2>Who we are?</h2>
+            <p>Josh's Matchpoint Marketplace is a family-owned business that has been serving the Heidelberg community for over 20 years. We are dedicated to providing the best quality products and services to our customers. Our goal is to make sure that every customer is satisfied with their purchase and has a great shopping experience. We offer a wide range of products including tennis rackets, tennis balls, tennis shoes, and tennis apparel. We also offer tennis lessons and racket stringing services. Our staff is knowledgeable and friendly, and we are always here to help you with any questions or concerns you may have. We look forward to serving you and hope to see you soon!</p>
+        </div>
+    </section>
+    <section id="about-app" class="section-p1">
+        <div class="details">
+            <h2>Install Our App</h2>
+            <p>Download our app from the App Store or Google Play and get access to exclusive deals and promotions. You can also track your orders and get notifications about new products and special offers. Our app is easy to use and secure, so you can shop with confidence. Don't miss out on the convenience of shopping on the go - download our app today!</p>
+            <div>
+                <img src="../../images/payment/app_store.jpg" alt="">
+                <img src="../../images/payment/play_store.jpg" alt="">
+            </div>
+        </div>
+        <div class="video">
+            <video autoplay muted loop src="../../images/app.mp4"></video>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Our Newsletter</h4>
+            <p>Don't miss out on our latest deals and <span>special offers</span>!</p>
+        </div>
+        <div class="newsform">
+            <input type="text" placeholder="Email Address">
+            <button class="normal">Subscribe</button>
+        </div>
+    </section>
+    <footer id="footer" class="section-p1">
+        <div class="col">
+            <img src="../../images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>123 ATP Street, Heidelberg</p>
+            <p><strong>Phone:</strong>+49123123123</p>
+            <p><strong>Hours:</strong>8:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Download from App Store or Google Play</p>
+            <div class="row">
+                <img src="../../images/payment/app_store.jpg" alt="">
+                <img src="../../images/payment/play_store.jpg" alt="">
+            </div>
+            <p>Secured Payment Methods</p>
+            <img src="../../images/payment/payment_methods.png" alt="">
+        </div>
+        <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="../../script.js"></script>
 </body>
 </html>
