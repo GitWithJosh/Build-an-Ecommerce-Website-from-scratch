@@ -7,8 +7,161 @@ This file contains the main structure of the first cart page.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/400dffb527.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Cart Page</h1>
+    <section id="header">
+        <a href="#"><img src="../../images/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../shop_pages/shop.html">Shop</a></li>
+                <li><a href="../blog_pages/blog.html">Blog</a></li>
+                <li><a href="../about_pages/about.html">About</a></li>
+                <li><a href="../contact_pages/contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+                <a id="close"><i class="fa-solid fa-x fa-sm"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart_pages/cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
+            <i id="bar" class="fa-solid fa-bars fa-xl"></i>
+        </div>
+    </section>
+    <section id="cart-landing">
+    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-times-circle"></i></td>
+                    <td><img src="../../images/featured_products/deal1/1.jpg" alt=""></td>
+                    <td>2x Blade 98 16X19 V9 Plus Schlägertasche</td>
+                    <td><s style="color: red;">710,00 €</s> 624,95 €</td>
+                    <td><input type="number" value="1"></td>
+                    <td>624,95 €</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-times-circle"></i></td>
+                    <td><img src="../../images/featured_products/deal2/1.jpg" alt=""></td>
+                    <td>2x Ultra Team V4.0 Plus Schlägertasche</td>
+                    <td><s style="color: red;">415,00 €</s> 258,95 €</td>
+                    <td><input type="number" value="1"></td>
+                    <td>258,95 €</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-times-circle"></i></td>
+                    <td><img src="../../images/featured_products/deal3/1.jpg" alt=""></td>
+                    <td>2x Pro Staff 97 X Plus Schlägertasche</td>
+                    <td><s style="color: red;">730,00 €</s> 480,95 €</td>
+                    <td><input type="number" value="1"></td>
+                    <td>480,95 €</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-times-circle"></i></td>
+                    <td><img src="../../images/featured_products/deal4/1.jpg" alt=""></td>
+                    <td>2x Clash 100 V2.0 Plus Schlägertasche</td>
+                    <td><s style="color: red;">730,00 €</s> 489,95 €</td>
+                    <td><input type="number" value="1"></td>
+                    <td>489,95 €</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-total" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Discount</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>1,854,80 €</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free Shipping</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>1,854,80 €</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Our Newsletter</h4>
+            <p>Don't miss out on our latest deals and <span>special offers</span>!</p>
+        </div>
+        <div class="newsform">
+            <input type="text" placeholder="Email Address">
+            <button class="normal">Subscribe</button>
+        </div>
+    </section>
+    <footer id="footer" class="section-p1">
+        <div class="col">
+            <img src="../../images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>123 ATP Street, Heidelberg</p>
+            <p><strong>Phone:</strong>+49123123123</p>
+            <p><strong>Hours:</strong>8:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Download from App Store or Google Play</p>
+            <div class="row">
+                <img src="../../images/payment/app_store.jpg" alt="">
+                <img src="../../images/payment/play_store.jpg" alt="">
+            </div>
+            <p>Secured Payment Methods</p>
+            <img src="../../images/payment/payment_methods.png" alt="">
+        </div>
+        <p>&copy; 2024 Josh's Matchpoint Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="../../script.js"></script>
 </body>
 </html>
