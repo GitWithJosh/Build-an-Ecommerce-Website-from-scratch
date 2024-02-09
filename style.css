@@ -150,6 +150,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 #landing h1 {
@@ -184,6 +185,7 @@ body {
     width: 100%;
     background-position: top 50% right 50%;
     background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 #blog-landing {
@@ -192,6 +194,34 @@ body {
     width: 100%;
     background-position: top 50% right 50%;
     background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+#about-landing {
+    background-image: url("images/landings/about_landing.png");
+    height: 20vh;
+    width: 100%;
+    background-position: top 50% right 50%;
+    background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+#contact-landing {
+    background-image: url("images/landings/contact_landing.png");
+    height: 20vh;
+    width: 100%;
+    background-position: top 50% right 50%;
+    background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+#cart-landing {
+    background-image: url("images/landings/cart_landing.png");
+    height: 20vh;
+    width: 100%;
+    background-position: top 50% right 50%;
+    background-size: cover;
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 /* Features Section Styles */
@@ -446,6 +476,7 @@ body {
     justify-content: center;
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 #banner h2 {
@@ -479,6 +510,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 5px 5px white inset;
 }
 
 #newsletter h4 {
@@ -671,6 +703,58 @@ body {
     right: -60px;
 }
 
+/* About Page Styles */
+
+#about-head {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #E3E6F3;
+}
+
+#about-head img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #E3E6F3;
+}
+
+#about-head div {
+    padding: 40px;
+}
+
+#about-app {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #E3E6F3;
+}
+
+#about-app img {
+    border: 1px solid #088178;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#about-app .details {
+    width: 50%;
+    padding: 40px;
+}
+
+#about-app .video {
+    width: 40%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #E3E6F3;
+}
 
 
 /* Media Queries */
@@ -839,4 +923,39 @@ body {
         font-size: 50px;
     }
 
+
+    /* About Page Styles */
+
+    #about-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding: 20px;
+    }
+
+    #about-app {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-app .details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #about-app .video {
+        display: none;
+    }
+
+    #about-app img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
 }
